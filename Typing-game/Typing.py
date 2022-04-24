@@ -2,6 +2,16 @@
 import pygame
 import random
 import time
+import os
+
+#Change Current working directory
+if os.path.exists("C:/Users/vigne/Documents/MEGA/Programming/Game/Typing-game") :
+    try:
+    # Change the current working Directory    
+        os.chdir("C:/Users/vigne/Documents/MEGA/Programming/Game/Typing-game")
+        print("Directory Successfully changed")
+    except OSError:
+        print("Can't change the Current Working Directory")
 
 #initializing window
 pygame.init()
